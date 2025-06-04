@@ -544,6 +544,11 @@ namespace Accounting_Software.PAL.UC
             }
         }
 
+        private void dgvProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void txtQuantity1_TextChanged(object sender, EventArgs e)
         {
             if (cmbProduct1.SelectedIndex != 0 && txtQuantity1.Text != string.Empty)
