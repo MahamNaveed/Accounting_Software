@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDelete = new System.Windows.Forms.Button();
             this.tpUpdateAndDeleteUser = new System.Windows.Forms.TabPage();
             this.txtPassword1 = new System.Windows.Forms.TextBox();
@@ -100,10 +100,10 @@
             this.tpUpdateAndDeleteUser.Controls.Add(this.label9);
             this.tpUpdateAndDeleteUser.Controls.Add(this.btnDelete);
             this.tpUpdateAndDeleteUser.Controls.Add(this.btnUpdate);
-            this.tpUpdateAndDeleteUser.Location = new System.Drawing.Point(4, 4);
+            this.tpUpdateAndDeleteUser.Location = new System.Drawing.Point(8, 8);
             this.tpUpdateAndDeleteUser.Name = "tpUpdateAndDeleteUser";
             this.tpUpdateAndDeleteUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tpUpdateAndDeleteUser.Size = new System.Drawing.Size(934, 571);
+            this.tpUpdateAndDeleteUser.Size = new System.Drawing.Size(926, 547);
             this.tpUpdateAndDeleteUser.TabIndex = 2;
             this.tpUpdateAndDeleteUser.Text = "Update and Delete User";
             this.tpUpdateAndDeleteUser.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@
             this.txtPassword1.Location = new System.Drawing.Point(129, 176);
             this.txtPassword1.Name = "txtPassword1";
             this.txtPassword1.ReadOnly = true;
-            this.txtPassword1.Size = new System.Drawing.Size(689, 24);
+            this.txtPassword1.Size = new System.Drawing.Size(689, 40);
             this.txtPassword1.TabIndex = 2;
             this.txtPassword1.UseSystemPasswordChar = true;
             // 
@@ -127,7 +127,7 @@
             this.txtOldPassword.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtOldPassword.Location = new System.Drawing.Point(129, 232);
             this.txtOldPassword.Name = "txtOldPassword";
-            this.txtOldPassword.Size = new System.Drawing.Size(689, 24);
+            this.txtOldPassword.Size = new System.Drawing.Size(689, 40);
             this.txtOldPassword.TabIndex = 3;
             this.txtOldPassword.UseSystemPasswordChar = true;
             // 
@@ -137,7 +137,7 @@
             this.txtNewPassword.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtNewPassword.Location = new System.Drawing.Point(129, 288);
             this.txtNewPassword.Name = "txtNewPassword";
-            this.txtNewPassword.Size = new System.Drawing.Size(689, 24);
+            this.txtNewPassword.Size = new System.Drawing.Size(689, 40);
             this.txtNewPassword.TabIndex = 4;
             this.txtNewPassword.UseSystemPasswordChar = true;
             // 
@@ -147,7 +147,7 @@
             this.txtUsername1.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtUsername1.Location = new System.Drawing.Point(129, 120);
             this.txtUsername1.Name = "txtUsername1";
-            this.txtUsername1.Size = new System.Drawing.Size(689, 24);
+            this.txtUsername1.Size = new System.Drawing.Size(689, 40);
             this.txtUsername1.TabIndex = 1;
             // 
             // label10
@@ -156,7 +156,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(126, 156);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 17);
+            this.label10.Size = new System.Drawing.Size(141, 32);
             this.label10.TabIndex = 0;
             this.label10.Text = "Password:";
             // 
@@ -166,7 +166,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(126, 212);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 17);
+            this.label11.Size = new System.Drawing.Size(195, 32);
             this.label11.TabIndex = 0;
             this.label11.Text = "Old Password:";
             // 
@@ -176,7 +176,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(126, 268);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 17);
+            this.label4.Size = new System.Drawing.Size(208, 32);
             this.label4.TabIndex = 0;
             this.label4.Text = "New Password:";
             // 
@@ -186,7 +186,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(126, 100);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 17);
+            this.label5.Size = new System.Drawing.Size(148, 32);
             this.label5.TabIndex = 0;
             this.label5.Text = "Username:";
             // 
@@ -197,7 +197,7 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
             this.label9.Location = new System.Drawing.Point(3, 3);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(182, 17);
+            this.label9.Size = new System.Drawing.Size(365, 34);
             this.label9.TabIndex = 0;
             this.label9.Text = "../Update and Delete User";
             // 
@@ -223,7 +223,7 @@
             this.txtSearchUsername.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtSearchUsername.Location = new System.Drawing.Point(261, 142);
             this.txtSearchUsername.Name = "txtSearchUsername";
-            this.txtSearchUsername.Size = new System.Drawing.Size(393, 24);
+            this.txtSearchUsername.Size = new System.Drawing.Size(393, 40);
             this.txtSearchUsername.TabIndex = 1;
             this.txtSearchUsername.TextChanged += new System.EventHandler(this.txtSearchUsername_TextChanged);
             // 
@@ -240,34 +240,35 @@
             this.dgvUsers.BackgroundColor = System.Drawing.Color.White;
             this.dgvUsers.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvUsers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvUsers.ColumnHeadersHeight = 45;
             this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvUsers.EnableHeadersVisualStyles = false;
             this.dgvUsers.Location = new System.Drawing.Point(7, 209);
             this.dgvUsers.MultiSelect = false;
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.ReadOnly = true;
             this.dgvUsers.RowHeadersVisible = false;
+            this.dgvUsers.RowHeadersWidth = 82;
             this.dgvUsers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUsers.ShowCellErrors = false;
@@ -282,6 +283,7 @@
             // 
             this.Column1.DataPropertyName = "User_Id";
             this.Column1.HeaderText = "Id";
+            this.Column1.MinimumWidth = 10;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
@@ -289,6 +291,7 @@
             // 
             this.Column2.DataPropertyName = "User_Name";
             this.Column2.HeaderText = "Username";
+            this.Column2.MinimumWidth = 10;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
@@ -296,6 +299,7 @@
             // 
             this.Column3.DataPropertyName = "User_Password";
             this.Column3.HeaderText = "Password";
+            this.Column3.MinimumWidth = 10;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
@@ -306,7 +310,7 @@
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
             this.label8.Location = new System.Drawing.Point(3, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(111, 17);
+            this.label8.Size = new System.Drawing.Size(223, 34);
             this.label8.TabIndex = 0;
             this.label8.Text = "../Manage User";
             // 
@@ -318,7 +322,7 @@
             this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblTotal.Location = new System.Drawing.Point(51, 525);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(20, 15);
+            this.lblTotal.Size = new System.Drawing.Size(39, 32);
             this.lblTotal.TabIndex = 0;
             this.lblTotal.Text = "{?}";
             // 
@@ -330,7 +334,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label6.Location = new System.Drawing.Point(3, 525);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 15);
+            this.label6.Size = new System.Drawing.Size(73, 32);
             this.label6.TabIndex = 0;
             this.label6.Text = "Total:";
             // 
@@ -349,25 +353,25 @@
             // 
             // tpAddUser
             // 
+            this.tpAddUser.BackColor = System.Drawing.Color.Black;
             this.tpAddUser.Controls.Add(this.btnAdd);
             this.tpAddUser.Controls.Add(this.txtPassword);
             this.tpAddUser.Controls.Add(this.txtUsername);
             this.tpAddUser.Controls.Add(this.label3);
             this.tpAddUser.Controls.Add(this.label2);
             this.tpAddUser.Controls.Add(this.label1);
-            this.tpAddUser.Location = new System.Drawing.Point(4, 4);
+            this.tpAddUser.Location = new System.Drawing.Point(8, 8);
             this.tpAddUser.Name = "tpAddUser";
             this.tpAddUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAddUser.Size = new System.Drawing.Size(934, 571);
+            this.tpAddUser.Size = new System.Drawing.Size(926, 547);
             this.tpAddUser.TabIndex = 0;
             this.tpAddUser.Text = "Add User";
-            this.tpAddUser.UseVisualStyleBackColor = true;
             this.tpAddUser.Enter += new System.EventHandler(this.tpAddUser_Enter);
             // 
             // btnAdd
             // 
             this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
+            this.btnAdd.BackColor = System.Drawing.Color.Red;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -386,7 +390,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtPassword.Location = new System.Drawing.Point(129, 176);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(689, 24);
+            this.txtPassword.Size = new System.Drawing.Size(689, 40);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -396,16 +400,17 @@
             this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtUsername.Location = new System.Drawing.Point(129, 120);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(689, 24);
+            this.txtUsername.Size = new System.Drawing.Size(689, 40);
             this.txtUsername.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(126, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 17);
+            this.label3.Size = new System.Drawing.Size(141, 32);
             this.label3.TabIndex = 0;
             this.label3.Text = "Password:";
             // 
@@ -413,9 +418,10 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(126, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 17);
+            this.label2.Size = new System.Drawing.Size(148, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "Username:";
             // 
@@ -423,10 +429,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 17);
+            this.label1.Size = new System.Drawing.Size(166, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "../Add User";
             // 
@@ -439,10 +445,10 @@
             this.tpManageUser.Controls.Add(this.label6);
             this.tpManageUser.Controls.Add(this.label7);
             this.tpManageUser.Controls.Add(this.picSearch);
-            this.tpManageUser.Location = new System.Drawing.Point(4, 4);
+            this.tpManageUser.Location = new System.Drawing.Point(8, 8);
             this.tpManageUser.Name = "tpManageUser";
             this.tpManageUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tpManageUser.Size = new System.Drawing.Size(934, 571);
+            this.tpManageUser.Size = new System.Drawing.Size(926, 547);
             this.tpManageUser.TabIndex = 1;
             this.tpManageUser.Text = "Manage User";
             this.tpManageUser.UseVisualStyleBackColor = true;
@@ -456,7 +462,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label7.Location = new System.Drawing.Point(257, 122);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 17);
+            this.label7.Size = new System.Drawing.Size(143, 31);
             this.label7.TabIndex = 0;
             this.label7.Text = "Username:";
             // 
@@ -476,7 +482,7 @@
             // 
             // UserControlSetting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tcUser);

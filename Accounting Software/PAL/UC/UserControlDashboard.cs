@@ -26,5 +26,10 @@ namespace Accounting_Software.PAL.UC
             labelUser.Text = AccountingDb.Count("SELECT COUNT(*) FROM Users;").ToString();
             labelProduct.Text = AccountingDb.Count("SELECT COUNT(*) FROM Products;").ToString();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

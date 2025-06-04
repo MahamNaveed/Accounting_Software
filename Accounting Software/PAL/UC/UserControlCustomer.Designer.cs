@@ -36,6 +36,10 @@
             this.tpManageCustomer = new System.Windows.Forms.TabPage();
             this.txtSearchName = new System.Windows.Forms.TextBox();
             this.dgvCustomers = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -61,10 +65,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tpManageCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).BeginInit();
@@ -82,10 +82,10 @@
             this.tpManageCustomer.Controls.Add(this.label6);
             this.tpManageCustomer.Controls.Add(this.label7);
             this.tpManageCustomer.Controls.Add(this.picSearch);
-            this.tpManageCustomer.Location = new System.Drawing.Point(4, 4);
+            this.tpManageCustomer.Location = new System.Drawing.Point(8, 8);
             this.tpManageCustomer.Name = "tpManageCustomer";
             this.tpManageCustomer.Padding = new System.Windows.Forms.Padding(3);
-            this.tpManageCustomer.Size = new System.Drawing.Size(934, 571);
+            this.tpManageCustomer.Size = new System.Drawing.Size(926, 547);
             this.tpManageCustomer.TabIndex = 1;
             this.tpManageCustomer.Text = "Manage Customer";
             this.tpManageCustomer.UseVisualStyleBackColor = true;
@@ -97,7 +97,7 @@
             this.txtSearchName.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtSearchName.Location = new System.Drawing.Point(261, 142);
             this.txtSearchName.Name = "txtSearchName";
-            this.txtSearchName.Size = new System.Drawing.Size(393, 24);
+            this.txtSearchName.Size = new System.Drawing.Size(393, 40);
             this.txtSearchName.TabIndex = 1;
             this.txtSearchName.TextChanged += new System.EventHandler(this.txtSearchName_TextChanged);
             // 
@@ -143,6 +143,7 @@
             this.dgvCustomers.Name = "dgvCustomers";
             this.dgvCustomers.ReadOnly = true;
             this.dgvCustomers.RowHeadersVisible = false;
+            this.dgvCustomers.RowHeadersWidth = 82;
             this.dgvCustomers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCustomers.ShowCellErrors = false;
@@ -152,6 +153,40 @@
             this.dgvCustomers.TabIndex = 0;
             this.dgvCustomers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomers_CellClick);
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Customer_Id";
+            this.Column1.HeaderText = "Id";
+            this.Column1.MinimumWidth = 10;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Customer_Name";
+            this.Column2.HeaderText = "Name";
+            this.Column2.MinimumWidth = 10;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Customer_Phone";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column3.HeaderText = "Phone #";
+            this.Column3.MinimumWidth = 10;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Customer_Address";
+            this.Column4.HeaderText = "Address";
+            this.Column4.MinimumWidth = 10;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -159,7 +194,7 @@
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
             this.label8.Location = new System.Drawing.Point(3, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(148, 17);
+            this.label8.Size = new System.Drawing.Size(296, 34);
             this.label8.TabIndex = 0;
             this.label8.Text = "../Manage Customer";
             // 
@@ -171,7 +206,7 @@
             this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblTotal.Location = new System.Drawing.Point(51, 525);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(20, 15);
+            this.lblTotal.Size = new System.Drawing.Size(39, 32);
             this.lblTotal.TabIndex = 0;
             this.lblTotal.Text = "{?}";
             // 
@@ -183,7 +218,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label6.Location = new System.Drawing.Point(3, 525);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 15);
+            this.label6.Size = new System.Drawing.Size(73, 32);
             this.label6.TabIndex = 0;
             this.label6.Text = "Total:";
             // 
@@ -195,7 +230,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label7.Location = new System.Drawing.Point(257, 122);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 17);
+            this.label7.Size = new System.Drawing.Size(96, 31);
             this.label7.TabIndex = 0;
             this.label7.Text = "Name:";
             // 
@@ -216,7 +251,7 @@
             // btnAdd
             // 
             this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
+            this.btnAdd.BackColor = System.Drawing.Color.Red;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -235,7 +270,7 @@
             this.txtPhone.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtPhone.Location = new System.Drawing.Point(129, 176);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(343, 24);
+            this.txtPhone.Size = new System.Drawing.Size(343, 40);
             this.txtPhone.TabIndex = 2;
             // 
             // txtName
@@ -244,16 +279,17 @@
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtName.Location = new System.Drawing.Point(129, 120);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(689, 24);
+            this.txtName.Size = new System.Drawing.Size(689, 40);
             this.txtName.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(126, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 17);
+            this.label3.Size = new System.Drawing.Size(128, 32);
             this.label3.TabIndex = 0;
             this.label3.Text = "Phone #:";
             // 
@@ -261,9 +297,10 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(126, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 17);
+            this.label2.Size = new System.Drawing.Size(99, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "Name:";
             // 
@@ -271,15 +308,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 17);
+            this.label1.Size = new System.Drawing.Size(239, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "../Add Customer";
             // 
             // tpAddCustomer
             // 
+            this.tpAddCustomer.BackColor = System.Drawing.Color.Black;
             this.tpAddCustomer.Controls.Add(this.btnAdd);
             this.tpAddCustomer.Controls.Add(this.txtAddress);
             this.tpAddCustomer.Controls.Add(this.label13);
@@ -288,13 +326,12 @@
             this.tpAddCustomer.Controls.Add(this.label3);
             this.tpAddCustomer.Controls.Add(this.label2);
             this.tpAddCustomer.Controls.Add(this.label1);
-            this.tpAddCustomer.Location = new System.Drawing.Point(4, 4);
+            this.tpAddCustomer.Location = new System.Drawing.Point(8, 8);
             this.tpAddCustomer.Name = "tpAddCustomer";
             this.tpAddCustomer.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAddCustomer.Size = new System.Drawing.Size(934, 571);
+            this.tpAddCustomer.Size = new System.Drawing.Size(926, 547);
             this.tpAddCustomer.TabIndex = 0;
             this.tpAddCustomer.Text = "Add Customer";
-            this.tpAddCustomer.UseVisualStyleBackColor = true;
             this.tpAddCustomer.Enter += new System.EventHandler(this.tpAddCustomer_Enter);
             // 
             // txtAddress
@@ -312,9 +349,10 @@
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label13.Location = new System.Drawing.Point(126, 212);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 17);
+            this.label13.Size = new System.Drawing.Size(121, 32);
             this.label13.TabIndex = 0;
             this.label13.Text = "Address:";
             // 
@@ -342,10 +380,10 @@
             this.tpUpdateAndDeleteCustomer.Controls.Add(this.label9);
             this.tpUpdateAndDeleteCustomer.Controls.Add(this.btnDelete);
             this.tpUpdateAndDeleteCustomer.Controls.Add(this.btnUpdate);
-            this.tpUpdateAndDeleteCustomer.Location = new System.Drawing.Point(4, 4);
+            this.tpUpdateAndDeleteCustomer.Location = new System.Drawing.Point(8, 8);
             this.tpUpdateAndDeleteCustomer.Name = "tpUpdateAndDeleteCustomer";
             this.tpUpdateAndDeleteCustomer.Padding = new System.Windows.Forms.Padding(3);
-            this.tpUpdateAndDeleteCustomer.Size = new System.Drawing.Size(934, 571);
+            this.tpUpdateAndDeleteCustomer.Size = new System.Drawing.Size(926, 547);
             this.tpUpdateAndDeleteCustomer.TabIndex = 2;
             this.tpUpdateAndDeleteCustomer.Text = "Update and Delete Customer";
             this.tpUpdateAndDeleteCustomer.UseVisualStyleBackColor = true;
@@ -369,7 +407,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(126, 212);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 17);
+            this.label4.Size = new System.Drawing.Size(121, 32);
             this.label4.TabIndex = 0;
             this.label4.Text = "Address:";
             // 
@@ -379,7 +417,7 @@
             this.txtPhone1.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtPhone1.Location = new System.Drawing.Point(129, 176);
             this.txtPhone1.Name = "txtPhone1";
-            this.txtPhone1.Size = new System.Drawing.Size(343, 24);
+            this.txtPhone1.Size = new System.Drawing.Size(343, 40);
             this.txtPhone1.TabIndex = 2;
             // 
             // txtName1
@@ -388,7 +426,7 @@
             this.txtName1.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtName1.Location = new System.Drawing.Point(129, 120);
             this.txtName1.Name = "txtName1";
-            this.txtName1.Size = new System.Drawing.Size(689, 24);
+            this.txtName1.Size = new System.Drawing.Size(689, 40);
             this.txtName1.TabIndex = 1;
             // 
             // label10
@@ -397,7 +435,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(126, 156);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 17);
+            this.label10.Size = new System.Drawing.Size(128, 32);
             this.label10.TabIndex = 0;
             this.label10.Text = "Phone #:";
             // 
@@ -407,7 +445,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(126, 100);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(52, 17);
+            this.label11.Size = new System.Drawing.Size(99, 32);
             this.label11.TabIndex = 0;
             this.label11.Text = "Name:";
             // 
@@ -418,7 +456,7 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
             this.label9.Location = new System.Drawing.Point(3, 3);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(219, 17);
+            this.label9.Size = new System.Drawing.Size(438, 34);
             this.label9.TabIndex = 0;
             this.label9.Text = "../Update and Delete Customer";
             // 
@@ -454,39 +492,9 @@
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Customer_Id";
-            this.Column1.HeaderText = "Id";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Customer_Name";
-            this.Column2.HeaderText = "Name";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Customer_Phone";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column3.HeaderText = "Phone #";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Customer_Address";
-            this.Column4.HeaderText = "Address";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
             // UserControlCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tcCustomer);

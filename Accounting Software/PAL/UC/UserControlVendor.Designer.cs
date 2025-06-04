@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -45,6 +45,10 @@
             this.tpManageVendor = new System.Windows.Forms.TabPage();
             this.txtSearchName = new System.Windows.Forms.TextBox();
             this.dgvVendors = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -61,10 +65,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tcVendor.SuspendLayout();
             this.tpAddVendor.SuspendLayout();
             this.tpManageVendor.SuspendLayout();
@@ -76,7 +76,7 @@
             // btnAdd
             // 
             this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
+            this.btnAdd.BackColor = System.Drawing.Color.Red;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -104,9 +104,10 @@
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label13.Location = new System.Drawing.Point(126, 212);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 17);
+            this.label13.Size = new System.Drawing.Size(121, 32);
             this.label13.TabIndex = 0;
             this.label13.Text = "Address:";
             // 
@@ -116,7 +117,7 @@
             this.txtPhone.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtPhone.Location = new System.Drawing.Point(129, 176);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(343, 24);
+            this.txtPhone.Size = new System.Drawing.Size(343, 40);
             this.txtPhone.TabIndex = 2;
             // 
             // txtName
@@ -125,16 +126,17 @@
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtName.Location = new System.Drawing.Point(129, 120);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(689, 24);
+            this.txtName.Size = new System.Drawing.Size(689, 40);
             this.txtName.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(126, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 17);
+            this.label3.Size = new System.Drawing.Size(128, 32);
             this.label3.TabIndex = 0;
             this.label3.Text = "Phone #:";
             // 
@@ -153,6 +155,7 @@
             // 
             // tpAddVendor
             // 
+            this.tpAddVendor.BackColor = System.Drawing.Color.Black;
             this.tpAddVendor.Controls.Add(this.btnAdd);
             this.tpAddVendor.Controls.Add(this.txtAddress);
             this.tpAddVendor.Controls.Add(this.label13);
@@ -161,22 +164,22 @@
             this.tpAddVendor.Controls.Add(this.label3);
             this.tpAddVendor.Controls.Add(this.label2);
             this.tpAddVendor.Controls.Add(this.label1);
-            this.tpAddVendor.Location = new System.Drawing.Point(4, 4);
+            this.tpAddVendor.Location = new System.Drawing.Point(8, 8);
             this.tpAddVendor.Name = "tpAddVendor";
             this.tpAddVendor.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAddVendor.Size = new System.Drawing.Size(934, 571);
+            this.tpAddVendor.Size = new System.Drawing.Size(926, 547);
             this.tpAddVendor.TabIndex = 0;
             this.tpAddVendor.Text = "Add Vendor";
-            this.tpAddVendor.UseVisualStyleBackColor = true;
             this.tpAddVendor.Enter += new System.EventHandler(this.tpAddVendor_Enter);
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(126, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 17);
+            this.label2.Size = new System.Drawing.Size(99, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "Name:";
             // 
@@ -184,10 +187,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 17);
+            this.label1.Size = new System.Drawing.Size(209, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "../Add Vendor";
             // 
@@ -200,10 +203,10 @@
             this.tpManageVendor.Controls.Add(this.label6);
             this.tpManageVendor.Controls.Add(this.label7);
             this.tpManageVendor.Controls.Add(this.picSearch);
-            this.tpManageVendor.Location = new System.Drawing.Point(4, 4);
+            this.tpManageVendor.Location = new System.Drawing.Point(8, 8);
             this.tpManageVendor.Name = "tpManageVendor";
             this.tpManageVendor.Padding = new System.Windows.Forms.Padding(3);
-            this.tpManageVendor.Size = new System.Drawing.Size(934, 571);
+            this.tpManageVendor.Size = new System.Drawing.Size(926, 547);
             this.tpManageVendor.TabIndex = 1;
             this.tpManageVendor.Text = "Manage Vendor";
             this.tpManageVendor.UseVisualStyleBackColor = true;
@@ -215,7 +218,7 @@
             this.txtSearchName.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtSearchName.Location = new System.Drawing.Point(261, 142);
             this.txtSearchName.Name = "txtSearchName";
-            this.txtSearchName.Size = new System.Drawing.Size(393, 24);
+            this.txtSearchName.Size = new System.Drawing.Size(393, 40);
             this.txtSearchName.TabIndex = 1;
             this.txtSearchName.TextChanged += new System.EventHandler(this.txtSearchName_TextChanged);
             // 
@@ -232,14 +235,14 @@
             this.dgvVendors.BackgroundColor = System.Drawing.Color.White;
             this.dgvVendors.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvVendors.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVendors.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVendors.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvVendors.ColumnHeadersHeight = 45;
             this.dgvVendors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvVendors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -247,20 +250,21 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvVendors.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvVendors.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvVendors.EnableHeadersVisualStyles = false;
             this.dgvVendors.Location = new System.Drawing.Point(7, 209);
             this.dgvVendors.MultiSelect = false;
             this.dgvVendors.Name = "dgvVendors";
             this.dgvVendors.ReadOnly = true;
             this.dgvVendors.RowHeadersVisible = false;
+            this.dgvVendors.RowHeadersWidth = 82;
             this.dgvVendors.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvVendors.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvVendors.ShowCellErrors = false;
@@ -270,6 +274,40 @@
             this.dgvVendors.TabIndex = 0;
             this.dgvVendors.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVendors_CellClick);
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Vendor_Id";
+            this.Column1.HeaderText = "Id";
+            this.Column1.MinimumWidth = 10;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Vendor_Name";
+            this.Column2.HeaderText = "Name";
+            this.Column2.MinimumWidth = 10;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Vendor_Phone";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column3.HeaderText = "Phone #";
+            this.Column3.MinimumWidth = 10;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Vendor_Address";
+            this.Column4.HeaderText = "Address";
+            this.Column4.MinimumWidth = 10;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -277,7 +315,7 @@
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
             this.label8.Location = new System.Drawing.Point(3, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(132, 17);
+            this.label8.Size = new System.Drawing.Size(266, 34);
             this.label8.TabIndex = 0;
             this.label8.Text = "../Manage Vendor";
             // 
@@ -289,7 +327,7 @@
             this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblTotal.Location = new System.Drawing.Point(51, 525);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(20, 15);
+            this.lblTotal.Size = new System.Drawing.Size(39, 32);
             this.lblTotal.TabIndex = 0;
             this.lblTotal.Text = "{?}";
             // 
@@ -301,7 +339,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label6.Location = new System.Drawing.Point(3, 525);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 15);
+            this.label6.Size = new System.Drawing.Size(73, 32);
             this.label6.TabIndex = 0;
             this.label6.Text = "Total:";
             // 
@@ -313,7 +351,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label7.Location = new System.Drawing.Point(257, 122);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 17);
+            this.label7.Size = new System.Drawing.Size(96, 31);
             this.label7.TabIndex = 0;
             this.label7.Text = "Name:";
             // 
@@ -342,10 +380,10 @@
             this.tpUpdateAndDeleteVendor.Controls.Add(this.label9);
             this.tpUpdateAndDeleteVendor.Controls.Add(this.btnDelete);
             this.tpUpdateAndDeleteVendor.Controls.Add(this.btnUpdate);
-            this.tpUpdateAndDeleteVendor.Location = new System.Drawing.Point(4, 4);
+            this.tpUpdateAndDeleteVendor.Location = new System.Drawing.Point(8, 8);
             this.tpUpdateAndDeleteVendor.Name = "tpUpdateAndDeleteVendor";
             this.tpUpdateAndDeleteVendor.Padding = new System.Windows.Forms.Padding(3);
-            this.tpUpdateAndDeleteVendor.Size = new System.Drawing.Size(934, 571);
+            this.tpUpdateAndDeleteVendor.Size = new System.Drawing.Size(926, 547);
             this.tpUpdateAndDeleteVendor.TabIndex = 2;
             this.tpUpdateAndDeleteVendor.Text = "Update and Delete Vendor";
             this.tpUpdateAndDeleteVendor.UseVisualStyleBackColor = true;
@@ -369,7 +407,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(126, 212);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 17);
+            this.label4.Size = new System.Drawing.Size(121, 32);
             this.label4.TabIndex = 0;
             this.label4.Text = "Address:";
             // 
@@ -379,7 +417,7 @@
             this.txtPhone1.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtPhone1.Location = new System.Drawing.Point(129, 176);
             this.txtPhone1.Name = "txtPhone1";
-            this.txtPhone1.Size = new System.Drawing.Size(343, 24);
+            this.txtPhone1.Size = new System.Drawing.Size(343, 40);
             this.txtPhone1.TabIndex = 2;
             // 
             // txtName1
@@ -388,7 +426,7 @@
             this.txtName1.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txtName1.Location = new System.Drawing.Point(129, 120);
             this.txtName1.Name = "txtName1";
-            this.txtName1.Size = new System.Drawing.Size(689, 24);
+            this.txtName1.Size = new System.Drawing.Size(689, 40);
             this.txtName1.TabIndex = 1;
             // 
             // label10
@@ -397,7 +435,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(126, 156);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 17);
+            this.label10.Size = new System.Drawing.Size(128, 32);
             this.label10.TabIndex = 0;
             this.label10.Text = "Phone #:";
             // 
@@ -407,7 +445,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(126, 100);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(52, 17);
+            this.label11.Size = new System.Drawing.Size(99, 32);
             this.label11.TabIndex = 0;
             this.label11.Text = "Name:";
             // 
@@ -418,7 +456,7 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
             this.label9.Location = new System.Drawing.Point(3, 3);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(203, 17);
+            this.label9.Size = new System.Drawing.Size(408, 34);
             this.label9.TabIndex = 0;
             this.label9.Text = "../Update and Delete Vendor";
             // 
@@ -454,39 +492,9 @@
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Vendor_Id";
-            this.Column1.HeaderText = "Id";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Vendor_Name";
-            this.Column2.HeaderText = "Name";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Vendor_Phone";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Column3.HeaderText = "Phone #";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Vendor_Address";
-            this.Column4.HeaderText = "Address";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
             // UserControlVendor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tcVendor);

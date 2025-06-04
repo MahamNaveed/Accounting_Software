@@ -10,7 +10,7 @@ namespace Accounting_Software.DAL
     {
         private static SqlConnection GetConnection()
         {
-            string sql = @"Data Source = DESKTOP-U69J12E\SQLEXPRESS; Initial Catalog = Accounting_Software; Integrated Security = True;";
+            string sql = @"Data Source = MAHAMNAVEED; Initial Catalog = Accounting_Software; Integrated Security = True;";
             SqlConnection connection = new SqlConnection(sql);
             try
             {
